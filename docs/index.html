@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ChamaPro — Chamou, resolveu.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #1E7F4F;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+    }
+    .service {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service h2 {
+      margin: 0 0 10px 0;
+    }
+    .service p {
+      margin: 0 0 15px 0;
+      color: #555;
+    }
+    button {
+      background: #FFC400;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ChamaPro</h1>
+  <p>Chamou, resolveu.</p>
+</header>
+
+<div class="container">
+
+  <div class="service">
+    <h2>🔌 Eletricista</h2>
+    <p>Problemas elétricos? Resolve hoje.</p>
+    <button onclick="chamar('Eletricista')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>🚰 Encanador</h2>
+    <p>Vazamentos e entupimentos.</p>
+    <button onclick="chamar('Encanador')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>📱 Técnico de Celular</h2>
+    <p>Conserto rápido e seguro.</p>
+    <button onclick="chamar('Técnico de Celular')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>🛠️ Montador de Móveis</h2>
+    <p>Montagem sem dor de cabeça.</p>
+    <button onclick="chamar('Montador de Móveis')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ChamaPro — Chamou, resolveu.
+</footer>
+
+<script>
+  function chamar(servico) {
+    const telefonePrestador = "5599999999999"; // TROQUE PELO SEU WHATSAPP
+    const mensagem = `Olá! Preciso de um ${servico} pelo ChamaPro.`;
+    const url = `https://wa.me/${telefonePrestador}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+      </html>
