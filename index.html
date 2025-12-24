@@ -1,0 +1,52 @@
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ChamaPro</h1>
+  <p>Chamou, resolveu.</p>
+</header>
+
+<div class="container">
+
+  <div class="service">
+    <h2>🔌 Eletricista</h2>
+    <p>Problemas elétricos? Resolve hoje.</p>
+    <button onclick="chamar('Eletricista')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>🚰 Encanador</h2>
+    <p>Vazamentos e entupimentos.</p>
+    <button onclick="chamar('Encanador')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>📱 Técnico de Celular</h2>
+    <p>Conserto rápido e seguro.</p>
+    <button onclick="chamar('Técnico de Celular')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+  <div class="service">
+    <h2>🛠️ Montador de Móveis</h2>
+    <p>Montagem sem dor de cabeça.</p>
+    <button onclick="chamar('Montador de Móveis')">CHAMAR PROFISSIONAL</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ChamaPro — Chamou, resolveu.
+</footer>
+
+<script>
+  function chamar(servico) {
+    const telefonePrestador = "5599999999999"; // TROQUE PELO SEU WHATSAPP
+    const mensagem = `Olá! Preciso de um ${servico} pelo ChamaPro.`;
+    const url = `https://wa.me/${telefonePrestador}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+</html>
